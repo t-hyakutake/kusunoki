@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    <title>くすのきオンラインショップ</title>
+    <link rel="icon" href="images/kusunoki_favicon.png">
+    <!-- font_awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css">
+    <link rel="stylesheet" href="css/shop.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="../index.html">
+            <img src="images/kusunoki_bn.png" alt="">
+        </a>
+        <h1 class="">くすのきオンラインショップ</h1>
+        <div class="to-introduce">
+            <a href="../lp/index.html">item紹介</a>
+        </div>
+    </header>
+    <main class="">
+        <div class="flex-container">
+            <div class="item-container" id="item-container">
+
+                <h2>特設shop限定アイテム</h2>
+                <ul class="products-container">
+                    <li class="product">
+                        <div class="img-container">
+                            <img src="images/train.jpg" alt="">
+                        </div>
+                        <div class="product-comments">
+                            <p class="product-id">MM-12</p>
+                            <p class="product-name">train</p>
+                            <p class="product-price">2300</p>
+                          
+                            <!-- [MM-12:train] HTML CART -->
+                            <form class="select-form" action="https://hyakublog.easy-myshop.jp/c-cart-prev?fic=MM-12" method="POST"
+                                accept-charset="UTF-8">
+                                <input type="hidden" name="item_code" value="MM-12" /><input type="hidden" name="dummy"
+                                    value="&amp;#65533;" />
+                                
+                                <select name="item_count">
+                                    <!-- <option value="0">0</option> -->
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                                <input type="hidden" name="last_url" value="">
+                                <input class="to-shop" type="submit" value="to shop" />
+                            </form>
+                        </div>
+                    </li>
+
+                </ul>
+
+
+            </div>
+            <div id="cart-items" class="cart-container">
+                <h2 class="cart-h2">CART</h2>
+                <p id="postage-comment"></p>
+                <ul id="cart-list" class="cart-ul"></ul>
+                <p id="cart-total" class="cart-total"></p>
+                <i id="to-payment" class="fa-regular fa-credit-card to-payment"></i>
+            </div>
+        </div>
+        <a href="#cart-items" class="cart-btn-container" id="slide-at-cart"><img src="images/cart.png" alt=""
+                class="cart-img"></a>
+    </main>
+    <footer class="footer">
+        <img class="footer-logo" src="images/kusunoki_2 のコピー.jpg" alt="">
+        <p>produced by Camphor tree</p>
+    </footer>
+    <script src="js/category.js"></script>
+    <script src="js/object_item.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="https://kit.fontawesome.com/e098fd57a0.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

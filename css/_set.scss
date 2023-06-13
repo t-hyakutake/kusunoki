@@ -1,0 +1,25 @@
+
+
+@mixin media-query-tab() {
+    @media screen and (width > 768px ) {
+        @content
+    }
+}
+
+
+@mixin media-query-pc() {
+    @media screen and (width > 900px ) {
+        @content
+    }
+}
+
+@mixin media-query-sp() {
+    @media screen and (width > 1100) {
+        @content
+    }
+}
+
+$main_color :#289bdf;
+$accent_color : #eabd3a;
+$balance_color : #9abca4;
+$font_color : #665d51;
